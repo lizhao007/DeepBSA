@@ -3,7 +3,7 @@ DeepBSA is a novel bulked segregant analysis (BSA) software for the dissection o
 
 **#Installation**
 
-The “Instruction or Manual” file of software was packed into the DeepBSA.zip.
+The download address of the software is http://zeasystemsbio.hzau.edu.cn/Tools, and the “Instruction or Manual” file was packed into the DeepBSA.zip.
 
 **#Input**
 
