@@ -6,6 +6,12 @@ DeepBSA is available for both Windows and Linux, and the download link is: http:
 链接：https://pan.baidu.com/s/1PbqOu5fDXK2RU5Hi3G4p6A?pwd=c71e 
 提取码：c71e
 
+# Updata history
+2022.11.15 version1.4: Improving the function of Simulator and offering the software for Linux.
+2022.08.30 version1.3: Newly added PDF file of mapping results and CSV file of algorithm values.
+2022.08.16 version1.2
+2022.07.25 version1.1
+
 # Input
 The input file for DeepBSA is the VCF file, which contains genomic variants for all bulked pools. For the genomic variant calling, we'd love to recommendate using GATK using the guided bioinformatic pipeline as follows:
 
