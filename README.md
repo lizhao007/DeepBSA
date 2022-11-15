@@ -2,7 +2,7 @@
 DeepBSA is a novel bulked segregant analysis (BSA) software for the dissection of complex traits. Two brand-new algorithms are developed in DeepBSA named deep learning (DL) and k-value (K), which can be applied on different number (at least 2) of bulked pools. DeepBSA also integrates five widely used algorithms - ED4, delta SNP_index, G', Ridit and SmoothLOD, and DL performs better than them with absolute bias and signal-to-noise ratio in our simulation. Overall, DeepBSA provides a user-friendly, OS-compatible, and all-in-one pipeline, which do not need sophisticated bioinformatics skills for BSA.
 
 # Installation
-DeepBSA is available for both Windows and Linux, and the download link is: http://zeasystemsbio.hzau.edu.cn/Tools. The “Instruction or Manual” file is packed into the DeepBSA_windows.zip.
+DeepBSA is available for both Windows and Linux, and the download link is: http://zeasystemsbio.hzau.edu.cn/Tools. 
 
 # Input
 The input file for DeepBSA is the VCF file, which contains genomic variants for all bulked pools. For the genomic variant calling, we'd love to recommendate using GATK using the guided bioinformatic pipeline as follows:
