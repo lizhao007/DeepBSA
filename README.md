@@ -8,7 +8,7 @@ DeepBSA is available for both Windows and Linux, and the download link is: http:
 The input file for DeepBSA is the VCF file, which contains genomic variants for all bulked pools. For the genomic variant calling, we'd love to recommendate using GATK using the guided bioinformatic pipeline as follows:
 
 ```
-##Taking two mixed pools as examples
+***Taking two mixed pools as examples***
 ##building reference index
 samtools faidx Referencegenome.fa
 bwa index Referencegenome.fa
