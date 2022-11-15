@@ -49,7 +49,7 @@ The “Instruction or Manual” file can be download in github and it is also pa
 ## For linux
 
 ### Requirment
-R and Python 3.7(or greater) to be installed. Other require python packages can be quickly installed by running "./requirment.txt" in main dictory.
+R and Python 3.7(or greater) should be installed. Other require python packages can be quickly installed by running "./requirment.txt" in main dictory.
 ```
 #QTL mapping 
 cd DeepBSA_linux_v1.4/bin/
