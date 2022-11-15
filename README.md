@@ -6,7 +6,7 @@ DeepBSA is available for both Windows and Linux, and the download link is: http:
 链接：https://pan.baidu.com/s/1PbqOu5fDXK2RU5Hi3G4p6A?pwd=c71e 
 提取码：c71e
 
-# Updata history
+# Update history
 2022.11.15 version1.4: Improving the function of Simulator and offering the software for Linux.
 
 2022.08.30 version1.3: Adding PDF file of mapping result and CSV file of algorithm value.
