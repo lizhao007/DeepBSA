@@ -55,9 +55,32 @@ R and Python 3.7(or greater) should be installed. Other require python packages 
 cd DeepBSA_linux_v1.4/bin/
 python3 main.py -h
 
+#usage: main.py [-h] --i I [--m M] [--p P] [--p1 P1] [--p2 P2] [--p3 P3] [--s S] [--w W] [--t T]
+ optional arguments:
+  -h, --help  show this help message and exit
+  --i I       The input file path(vcf/csv).
+  --m M       The algorithm(DL/K/ED4/SNP/SmoothG/SmoothLOD/Ridit) used. Default is DL.
+  --p P       Whether to pretreatment data(1[True] or 0[False]). Default is True.
+  --p1 P1     Pretreatment step 1: Number of read thread, the SNP whose number lower than it will be filtered. Default is 0.
+  --p2 P2     Pretreatment step 2: Chi-square test(1[True] or 0[False]). Default is 1[True].
+  --p3 P3     Pretreatment step 3: Continuity test(1[True] or 0[False]). Default is 1[True].
+  --s S       The function to smooth the result(Tri-kernel-smooth\LOWESS\Moving Average), Defalut is LOWESS
+  --w W       Windows size of LOESS. The number is range from 0-1. 0 presents the best size for minimum AICc. Default is 0(auto).
+  --t T       The threshold to find peaks(float). Default is 0(auto)
+
 #Data simulation
 cd DeepBSA_linux_v1.4/bin/
 python3 simulate_progress.py -h
+
+#usage: simulate_progress.py [-h] --i I --p P --r R --e E --s S
+ optional arguments:
+  -h, --help  show this help message and exit
+  --i I       individual
+  --p P       pools
+  --r R       ratio
+  --e E       effective points
+  --s S       save path
+
 ```
 More details for parameters can be got in the “Instruction or Manual” file.
 
