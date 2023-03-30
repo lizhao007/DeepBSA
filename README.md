@@ -49,10 +49,16 @@ The “Instruction or Manual” file can be download in github and it is also pa
 ## For linux
 
 ### Requirment
-R and Python 3.7(or greater) should be installed. Other require python packages can be quickly installed by running "./requirment.txt" in main dictory.
+R and Python 3.7(or greater) should be installed. Other require python packages can be quickly installed by running "./requirment.txt" in main dictory as follows.
 ```
+#Install
+wget http://zeasystemsbio.hzau.edu.cn/Tools/DeepBSA_linux_v1.4.tar.gz
+tar -xvzf DeepBSA_linux_v1.4.tar.gz
+cd DeepBSA_linux_v1.4/
+./requirment.txt
+
 #QTL mapping 
-cd DeepBSA_linux_v1.4/bin/
+cd bin/
 python3 main.py -h
 
 #usage: main.py [-h] --i I [--m M] [--p P] [--p1 P1] [--p2 P2] [--p3 P3] [--s S] [--w W] [--t T]
