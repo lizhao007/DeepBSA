@@ -1,22 +1,26 @@
 # Background
-DeepBSA is a novel bulked segregant analysis (BSA) software for the dissection of complex traits. Two brand-new algorithms are developed in DeepBSA named deep learning (DL) and k-value (K), which can be applied on different number (at least 2) of bulked pools. DeepBSA also integrates five widely used algorithms - ED4, delta SNP_index, G', Ridit and SmoothLOD, and DL performs better than them with absolute bias and signal-to-noise ratio in our simulation. Overall, DeepBSA provides a user-friendly, OS-compatible, and all-in-one pipeline, which do not need sophisticated bioinformatics skills for BSA.
+DeepBSA is a novel bulked segregant analysis (BSA) software for the dissection of complex traits. Two brand-new algorithms are developed in DeepBSA, deep learning (DL) and k-value (K), which can be applied to different numbers (at least 2) of bulked pools. DeepBSA also integrates five widely used algorithms - ED4, delta SNP_index, G', Ridit, and SmoothLOD, and DL performs better than them with absolute bias and signal-to-noise ratio in our simulation. Overall, DeepBSA provides a user-friendly, OS-compatible, and all-in-one pipeline, which does not need sophisticated bioinformatics skills for BSA.
 
 # Installation
-DeepBSA is available for both Windows and Linux, and the download link is: http://zeasystemsbio.hzau.edu.cn/tools.html. The alternate cloud download link is:
+DeepBSA is available for both Windows and Linux, and the download link is http://zeasystemsbio.hzau.edu.cn/tools.html. The alternate cloud download link is:
 链接：https://pan.baidu.com/s/1PbqOu5fDXK2RU5Hi3G4p6A?pwd=c71e 
 提取码：c71e
 
 # Update history
-2022.11.15 version1.4: Improving the function of Simulator and offering the software for Linux.
+##2024.5 version 1.6：The flashback problem of the Windows version has been fixed, and the problem of data volume has been tested. VCF pretreatment of 100,000 SNP in two mixed pools takes about 3 minutes, and calculation and drawing take about 10 seconds. The pretreatment of a VCF file with 10 million SNP is about 2 hours (about 80 minutes corresponding to CSV format), and the calculation and drawing are about 25 minutes.（Windows 版本的闪退问题已经修复，同时测试了数据量的问题。两个混池10万SNP的VCF预处理约3分钟，计算及画图约10秒；1000万SNP的VCF文件预处理约2小时（对应CSV格式约80分钟），计算及画图约25分钟.）
 
-2022.08.30 version1.3: Adding PDF file of mapping result and CSV file of algorithm value.
+2023.9 version 1.5：Improved drawing and fixed small bugs.
 
-2022.08.16 version1.2
+2022.11.15 version 1.4: Improving the Simulator's function and offering the software for Linux.
 
-2022.07.25 version1.1
+2022.08.30 version 1.3: Adding PDF file of mapping result and CSV file of algorithm value.
+
+2022.08.16 version 1.2
+
+2022.07.25 version 1.1
 
 # Input
-The input file for DeepBSA is the VCF file, which contains genomic variants for all bulked pools. For the genomic variant calling, we'd love to recommendate using GATK using the guided bioinformatic pipeline as follows:
+The input file for DeepBSA is the VCF file, which contains genomic variants for all bulked pools. For the genomic variant calling, we'd love to recommend using GATK using the guided bioinformatic pipeline as follows:
 
 ```
 ***Taking two mixed pools as examples***
@@ -45,11 +49,11 @@ java -Xmx64g -jar $EBROOTGATK/GenomeAnalysisTK.jar -T HaplotypeCaller -R Referen
 # Usage
 ## For windows
 
-The “Instruction or Manual” file can be download in github and it is also packed into the DeepBSA_windows.zip.
-## For linux
+The “Instruction or Manual” file can be downloaded from GitHub and it is also packed into the DeepBSA_windows.zip.
+## For Linux
 
-### Requirment
-R and Python 3.7(or greater) should be installed. Other require python packages can be quickly installed by running "./requirment.txt" in main dictory as follows.
+### Requirement
+R and Python 3.7(or greater) should be installed. Other required Python packages can be quickly installed by running "./requirment.txt" in the main directory as follows.
 ```
 #Install
 wget http://zeasystemsbio.hzau.edu.cn/Tools/DeepBSA_linux_v1.4.tar.gz
@@ -65,13 +69,13 @@ python3 main.py -h
  optional arguments:
   -h, --help  show this help message and exit
   --i I       The input file path(vcf/csv).
-  --m M       The algorithm(DL/K/ED4/SNP/SmoothG/SmoothLOD/Ridit) used. Default is DL.
-  --p P       Whether to pretreatment data(1[True] or 0[False]). Default is True.
-  --p1 P1     Pretreatment step 1: Number of read thread, the SNP whose number lower than it will be filtered. Default is 0.
-  --p2 P2     Pretreatment step 2: Chi-square test(1[True] or 0[False]). Default is 1[True].
-  --p3 P3     Pretreatment step 3: Continuity test(1[True] or 0[False]). Default is 1[True].
-  --s S       The function to smooth the result(Tri-kernel-smooth\LOWESS\Moving Average), Defalut is LOWESS
-  --w W       Windows size of LOESS. The number is range from 0-1. 0 presents the best size for minimum AICc. Default is 0(auto).
+  --m M       The algorithm(DL/K/ED4/SNP/SmoothG/SmoothLOD/Ridit) used. The default is DL.
+  --p P       Whether to pretreatment data(1[True] or 0[False]). The default is True.
+  --p1 P1     Pretreatment step 1: Number of read thread, the SNP whose number is lower than it will be filtered. The default is 0.
+  --p2 P2     Pretreatment step 2: Chi-square test(1[True] or 0[False]). The default is 1[True].
+  --p3 P3     Pretreatment step 3: Continuity test(1[True] or 0[False]). The default is 1[True].
+  --s S       The function to smooth the result(Tri-kernel-smooth\LOWESS\Moving Average). The default is LOWESS
+  --w W       Windows size of LOESS. The number ranges from 0-1. 0 presents the best size for minimum AICc. The default is 0(auto).
   --t T       The threshold to find peaks(float). Default is 0(auto)
 
 #Data simulation
@@ -88,7 +92,7 @@ python3 simulate_progress.py -h
   --s S       save path
 
 ```
-More details for parameters can be got in the “Instruction or Manual” file.
+More parameters details can be found in the “Instruction or Manual” file.
 
 # Cite
 
