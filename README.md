@@ -7,7 +7,7 @@ DeepBSA is available for both Windows and Linux, and the download link is http:/
 提取码：c71e
 
 # Update history
-### 2024.5 version 1.6：The flashback problem of the Windows version has been fixed, and the problem of data volume has been tested. VCF pretreatment of 100,000 SNP in two mixed pools takes about 3 minutes, and calculation and drawing take about 10 seconds. The pretreatment of a VCF file with 10 million SNP is about 2 hours (about 80 minutes corresponding to CSV format), and the calculation and drawing are about 25 minutes.（Windows 版本的闪退问题已经修复，同时测试了数据量的问题。两个混池10万SNP的VCF预处理约3分钟，计算及画图约10秒；1000万SNP的VCF文件预处理约2小时（对应CSV格式约80分钟），计算及画图约25分钟.）
+### 2024.5 version 1.6：The flashback problem of the Windows version has been fixed, and the problem of data volume has been tested. VCF pretreatment of 100,000 SNP in two mixed pools takes about 3 minutes, and calculation and drawing take about 10 seconds. The pretreatment of a VCF file with 10 million SNP is about 80 minutes (same as CSV format), and the calculation and drawing are about 25 minutes.（Windows 版本的闪退问题已经修复，同时测试了数据量的问题。两个混池10万SNP的VCF预处理约3分钟，计算及画图约10秒；1000万SNP的VCF文件预处理约80分钟（CSV格式相同），计算及画图约25分钟.）
 
 2023.9 version 1.5：Improved drawing and fixed small bugs.
 
