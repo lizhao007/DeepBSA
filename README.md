@@ -3,11 +3,12 @@ DeepBSA is a novel bulked segregant analysis (BSA) software for the dissection o
 
 # Installation
 DeepBSA is available for both Windows and Linux, and the download link is http://zeasystemsbio.hzau.edu.cn/tools.html. The alternate cloud download link is:
-链接：https://pan.baidu.com/s/1PbqOu5fDXK2RU5Hi3G4p6A?pwd=c71e 
-提取码：c71e
+https://pan.baidu.com/s/1PbqOu5fDXK2RU5Hi3G4p6A?pwd=c71e and https://doi.org/10.6084/m9.figshare.32293758
 
 # Update history
-### 2024.5 version 1.6：The flashback problem of the Windows version has been fixed, and the problem of data volume has been tested. VCF pretreatment of 100,000 SNP in two mixed pools takes about 3 minutes, and calculation and drawing take about 10 seconds. The pretreatment of a VCF file with 10 million SNP is about 80 minutes (same as CSV format), and the calculation and drawing are about 25 minutes.（Windows 版本的闪退问题已经修复，同时测试了数据量的问题。两个混池10万SNP的VCF预处理约3分钟，计算及画图约10秒；1000万SNP的VCF文件预处理约80分钟（CSV格式相同），计算及画图约25分钟.）
+### Note: The Linux version is no longer being updated. Please switch to the Windows version instead. If your VCF file is too large, it is recommended to first perform low-quality site filtering. Maintaining the ratio of variant sites to total genomic base pairs between 0.05% and 0.1% (5 per 10,000 to 1 per 1,000) can yield good results.
+
+2024.5 version 1.6：The flashback problem of the Windows version has been fixed, and the problem of data volume has been tested. VCF pretreatment of 100,000 SNP in two mixed pools takes about 3 minutes, and calculation and drawing take about 10 seconds. The pretreatment of a VCF file with 10 million SNP is about 80 minutes (same as CSV format), and the calculation and drawing are about 25 minutes.（Windows 版本的闪退问题已经修复，同时测试了数据量的问题。两个混池10万SNP的VCF预处理约3分钟，计算及画图约10秒；1000万SNP的VCF文件预处理约80分钟（CSV格式相同），计算及画图约25分钟.）
 
 2023.9 version 1.5：Improved drawing and fixed small bugs.
 
